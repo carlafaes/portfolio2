@@ -7,6 +7,8 @@ import Typewriter from 'typewriter-effect'
 export default function About(){
 const [information, setInformation]=useState({});
 const h1='<h1/>'
+const p='<p/>'
+const tab = <>&nbsp;</>;
 
 useEffect(()=>{
     axios.get('https://portfolio-carlafaes.herokuapp.com/about')
@@ -16,6 +18,7 @@ useEffect(()=>{
 },[])
     return(
         <div className={style.general}>
+            
             <div className={style.container1}>
             <img className={style.img1} src={perfil} alt='yo_foto' />
             </div>
@@ -24,40 +27,39 @@ useEffect(()=>{
                 <div className={style.titleTags}>
                 <p  className={style.tags}>{h1}</p>
                 <p className={style.primTitle}>Hi! my name is</p>
-                <p className={style.tags}>{h1}</p>
+                
                 </div>
-            <div>
-
-                    <div className={style.name1}>
-                        <h1 className={style.name}>C</h1>
-                        <h1 className={style.name}>A</h1>
-                        <h1 className={style.name}>R</h1>
-                        <h1 className={style.name}>L</h1>
-                        <h1 className={style.name}>A</h1>
-                    </div>
-
-                    <div className={style.name2}>
-                    <h1 className={style.name}>F</h1>
-                    <h1 className={style.name}>A</h1>
-                    <h1 className={style.name}>E</h1>
-                    <h1 className={style.name}>S</h1>
-
+             <div className={style.letters}>
+                    <section className={style.name1}>
+                        <p className={style.name}>C</p>
+                        <p className={style.name}>A</p>
+                        <p className={style.name}>R</p>
+                        <p className={style.name}>L</p>
+                        <p className={style.name}>A {tab}</p>
+                         
+                        <p className={style.name}> F</p>
+                        <p className={style.name}>A</p>
+                        <p className={style.name}>E</p>
+                        <p className={style.name}>S</p>
+                    </section>
+                    <p className={style.tags}>{h1}</p>
                  </div>
-            </div>
                 <div className={style.container3}>
+                <p className={style.tags}>{p}</p>
                     <div className={style.titleTags}>
-                     <p className={style.primTitle}>And i'm a </p>
+                     <p className={style.primTitle}>And i'm  </p>
                     </div>
                      <div className={style.segTitle}>
                      <Typewriter
                      
                      options={{
-                         strings:['Full Stack Web Developer', 'Artist','Styles lover'],
+                         strings:['Full Stack Web Developer👩‍💻', 'Artist 🎨','Student🤓 ','Argentina ' ],
                          autoStart: true,
                          loop:true,
                      }}
                      />
                      </div>
+                 <p className={style.tags}>{p}</p>
                 </div>
             </div>
           
