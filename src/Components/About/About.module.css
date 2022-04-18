@@ -1,0 +1,112 @@
+.general{
+    height: 100vh;
+    position: relative;
+    z-index: -10;
+    background-color: black;
+    color: antiquewhite;
+}
+.img1{
+    width: 300px;
+    height: 90%;
+    padding-right: 25%;
+    overflow: hidden;
+}
+.container1{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    height: 50%;
+    margin-top: 130px;
+    position: absolute;
+    background-color: white;
+    z-index: -1;
+}
+.container2{
+    position: absolute;
+    background-color: red;
+    height:100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.name1{
+    display: flex;
+    flex-direction: row;
+    padding-left: 40%;
+    width: 100%;
+    letter-spacing: 10px;
+    color: pink;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    position: absolute;
+    background-color: transparent;
+}
+.name2{
+    display: flex;
+    flex-direction: row;
+    padding-left: 60%;
+    width: 100%;
+    letter-spacing: 10px;
+    color: rgba(252, 41, 76, 0.678);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    position: absolute;
+    margin-top: 65px;
+    background-color: transparent;
+}
+.titleTags{
+    background-color: blueviolet;
+    width: 100%;
+}
+.tags{
+    background-color: green;
+}
+.primTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10%;
+
+    
+    height: auto;
+    font-size: 30px;
+    position: relative;
+    background-color: transparent;
+}
+.segTitle{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 20%;
+    color: pink;
+    height: auto;
+    
+    
+    font-size: 32px;
+    position: relative;
+    background-color: transparent;
+}
+
+.componente2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+background-color:blue;
+}
+.container3{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 110px;
+}

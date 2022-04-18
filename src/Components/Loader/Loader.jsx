@@ -1,8 +1,38 @@
 import React,{useEffect} from 'react'
 import Image from '../Image'
 import perfil from './images/original.png'
-import './Loader.scss'
+import style from './Loader.css'
+import { motion } from 'framer-motion'
 
+const container={
+    show:{
+        transition:{
+            staggerChildren: 0.35,
+        }
+    }
+}
+
+const item={
+    hidden:{
+        opacity: 0, y: 200
+    },
+    show:{
+        opacity:1,
+        y:0,
+        transition:{
+            ease:[0.6,0.01, -0.05, 0.95],
+            duration:1.6,
+        }
+    },
+    exit:{
+        opacity:0,
+        y:0,
+        transition:{
+            ease:[0.6,0.01, -0.05,0.95],
+            duration:1.6
+        }
+    }
+}
 
 const Loader = ({setLoading})=>{
         useEffect(()=>{
@@ -13,24 +43,24 @@ const Loader = ({setLoading})=>{
         return ()=> clearTimeout(timer)
         })
         return(
-            <div className='loader'>
-            <div className='loader-inner'>
-                <imageBlock id='img1'/>
-            <div className='transition-image'>
+            <div className={style.loader}>
+            <div className={style.loader_inner}>
+                <ImageBlock id='img1'/>
+            <div className={style.transition_image}>
             <img src={perfil} alt='random'/>
             </div>
-            <imageBlock id='img2'/>
-            <imageBlock id='img3'/>
-            <imageBlock id='img4'/>
+            <ImageBlock id='img2'/>
+            <ImageBlock id='img3'/>
+            <ImageBlock id='img4'/>
             </div>
             </div>
         )
     }
-export function imageBlock({id}){
+export function ImageBlock({id}){
         return(
-            <div className={`image-block ${id}`}>
+            <div>
                 <Image
-                src={`/images/${id}.png`}
+                src={process.env.PUBLIC_URL +`/images/${id}.png`}
                 alt={id}
                 />
             </div>

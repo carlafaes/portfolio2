@@ -2,10 +2,10 @@ import React from 'react';
 
 const Image = ({src,fallback,alt})=>{
     return(
-        <picture>
-            <source srcSet={src}  />
+        <div>
+            <img srcSet={src}  />
             
-        </picture>
+        </div>
     )
 }
 export default Image

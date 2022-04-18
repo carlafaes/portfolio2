@@ -3,12 +3,12 @@ import {Route,Routes} from 'react-router-dom';
 
 //Components
 import Loader from './Components/Loader/Loader'
-import About from './Components/About/About';
-import Portfolio from './Components/Portfolio/Portfolio';
+import Home from './Components/Home/Home'
+import Portfolio from './Components/Portfolio/Portfolio'
 import './App.css';
 
 function App() {
-  const [loading,setLoading]= useState(true);
+  const [loading,setLoading]= useState(false);
 
   useEffect(()=>{
     loading ? 
@@ -24,7 +24,7 @@ function App() {
     ):(
     <div className="App">
       <Routes>
-        <Route  path='/' element={<About/>}/>
+        <Route  path='/' element={<Home/>}/>
         <Route  path='/port' element={<Portfolio/>}/>
       </Routes>
     </div>
