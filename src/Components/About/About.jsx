@@ -1,8 +1,11 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
-import perfil from './img/perfil.jpg'
+import perfil from './img/perfil2.png'
+import fondo from './img/fondo4.png'
 import style from './About.module.css'
 import Typewriter from 'typewriter-effect'
+import { motion } from "framer-motion";
+
 
 export default function About(){
 const [information, setInformation]=useState({});
@@ -17,9 +20,11 @@ useEffect(()=>{
     )
 },[])
     return(
-        <div className={style.general}>
+        <div className={style.general} id='about'>
             
             <div className={style.container1}>
+            <div className={style.img3}></div>
+            <div className={style.img2}></div>
             <img className={style.img1} src={perfil} alt='yo_foto' />
             </div>
         <div className={style.container2}>
@@ -31,16 +36,70 @@ useEffect(()=>{
                 </div>
              <div className={style.letters}>
                     <section className={style.name1}>
-                        <p className={style.name}>C</p>
-                        <p className={style.name}>A</p>
-                        <p className={style.name}>R</p>
-                        <p className={style.name}>L</p>
-                        <p className={style.name}>A {tab}</p>
+                        <motion.p
+                         whileHover={{
+                             y:-26,
+                            duration:1
+                          }}
+                          whileTap={{ scale: 0.9 }}
+                        className={style.name}>C</motion.p>
+                        <motion.p
+                          whileHover={{
+                            y:-26,
+                           duration:1
+                         }}
+                         whileTap={{ scale: 0.9 }}
+                        className={style.name}>A</motion.p>
+                        <motion.p
+                          whileHover={{
+                            y:-26,
+                           duration:1
+                         }}
+                         whileTap={{ scale: 0.9 }}
+                        className={style.name}>R</motion.p>
+                        <motion.p
+                          whileHover={{
+                            y:-26,
+                           duration:1
+                         }}
+                         whileTap={{ scale: 0.9 }}
+                        className={style.name}>L</motion.p>
+                        <motion.p
+                          whileHover={{
+                            y:-26,
+                           duration:1
+                         }}
+                         whileTap={{ scale: 0.9 }}
+                        className={style.name}>A {tab}</motion.p>
                          
-                        <p className={style.name}> F</p>
-                        <p className={style.name}>A</p>
-                        <p className={style.name}>E</p>
-                        <p className={style.name}>S</p>
+                        <motion.p
+                          whileHover={{
+                            y:-26,
+                           duration:1
+                         }}
+                         whileTap={{ scale: 0.9 }}
+                        className={style.name}> F</motion.p>
+                        <motion.p 
+                          whileHover={{
+                            y:-26,
+                           duration:1
+                         }}
+                         whileTap={{ scale: 0.9 }}
+                        className={style.name}>A</motion.p>
+                        <motion.p
+                          whileHover={{
+                            y:-26,
+                           duration:1
+                         }}
+                         whileTap={{ scale: 0.9 }}
+                        className={style.name}>E</motion.p>
+                        <motion.p
+                          whileHover={{
+                            y:-26,
+                           duration:1
+                         }}
+                         whileTap={{ scale: 0.9 }}
+                        className={style.name}>S</motion.p>
                     </section>
                     <p className={style.tags}>{h1}</p>
                  </div>
@@ -65,7 +124,7 @@ useEffect(()=>{
           
             
         </div>
-            <p className={style.text}>{information.about_me}</p> 
+            {/* <p className={style.text}>{information.about_me}</p>  */}
         </div>
     )
 }

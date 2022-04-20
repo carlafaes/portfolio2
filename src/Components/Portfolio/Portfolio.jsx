@@ -13,7 +13,7 @@ export default function Portfolio(){
     },[setProjects])
 
     return(
-        <div>
+        <div id='portfolio'>
             {projects ? projects.map((el,index)=>(
                 <div key={index}> 
                     <p>{el.name}</p>

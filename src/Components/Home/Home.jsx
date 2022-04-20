@@ -2,6 +2,7 @@ import React,{useRef,useState,useEffect} from 'react'
 import About from '../About/About';
 import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contacto/Contacto';
+import Navbar from '../Navbar/Navbar';
 import style from '../MouseTrail/MouseTrail.module.css';
 
 
@@ -83,6 +84,7 @@ const Home = () => {
   return (
     <div>
       <div>
+      <Navbar/>
       <About/>
       <Portfolio/>
       {dotPosition.map((pos,idx)=>(

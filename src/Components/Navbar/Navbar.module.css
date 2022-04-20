@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(97, 1, 233);
+    color: pink;
+    width: 100%;
+    height:30px;
+}
+.container:hover{
+    background-color: black;
+}
