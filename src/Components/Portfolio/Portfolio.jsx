@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default function Portfolio(){
     const [projects,setProjects]=useState([]);
-    console.log(projects)
+    
 
     useEffect(()=>{
         axios.get('https://portfolio-carlafaes.herokuapp.com/portfolio')
