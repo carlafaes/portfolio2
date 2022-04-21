@@ -6,14 +6,14 @@ export default function Navbar(){
 
     return(
         <div className={style.container}>
-            <div>
-            <Link to='about'>About</Link>
+            <div className={style.btn}>
+            <Link className={style.link} to='about'>About</Link>
             </div>
-            <div>
-            <Link to='portfolio'>Portfolio</Link>
+            <div className={style.btn}>
+            <Link className={style.link} to='portfolio'>Portfolio</Link>
             </div>
-            <div>
-            <Link to='contact'>Contact</Link>
+            <div className={style.btn}>
+            <Link className={style.link} to='contact'>Contact</Link>
             </div>
         </div>
     )

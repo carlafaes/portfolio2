@@ -1,0 +1,17 @@
+
+.container{
+    background-color: brown;
+    display:grid;
+    grid-column: auto;
+    gap:20px ;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+}
+.card{
+    position: relative;
+    width: 30%;
+    height: auto;
+}

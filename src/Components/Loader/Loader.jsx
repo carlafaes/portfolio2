@@ -1,6 +1,4 @@
 import React,{useEffect} from 'react'
-import Image from '../Image'
-import perfil from './images/original.png'
 import style from './Loader.css'
 import { motion } from 'framer-motion'
 
@@ -44,25 +42,13 @@ const Loader = ({setLoading})=>{
         })
         return(
             <div className={style.loader}>
-            <div className={style.loader_inner}>
-                <ImageBlock id='img1'/>
-            <div className={style.transition_image}>
-            <img src={perfil} alt='random'/>
-            </div>
-            <ImageBlock id='img2'/>
-            <ImageBlock id='img3'/>
-            <ImageBlock id='img4'/>
-            </div>
+           
             </div>
         )
     }
 export function ImageBlock({id}){
         return(
             <div>
-                <Image
-                src={process.env.PUBLIC_URL +`/images/${id}.png`}
-                alt={id}
-                />
             </div>
         )
     }

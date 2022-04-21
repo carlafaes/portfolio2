@@ -1,6 +1,6 @@
 import React,{useRef,useState,useEffect} from 'react'
 import About from '../About/About';
-import Portfolio from '../Portfolio/Portfolio';
+import Portfolio from '../PortfolioHome/PortfolioHome';
 import Contact from '../Contacto/Contacto';
 import Navbar from '../Navbar/Navbar';
 import style from '../MouseTrail/MouseTrail.module.css';
