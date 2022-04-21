@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
-import perfil from './img/perfil2.png'
+import perfil from './img/perfil1.png'
 import fondo from './img/fondo4.png'
 import style from './About.module.css'
 import Typewriter from 'typewriter-effect'
@@ -23,8 +23,6 @@ useEffect(()=>{
         <div className={style.general} id='about'>
             
             <div className={style.container1}>
-            <div className={style.img3}></div>
-            <div className={style.img2}></div>
             <img className={style.img1} src={perfil} alt='yo_foto' />
             </div>
         <div className={style.container2}>
@@ -112,7 +110,7 @@ useEffect(()=>{
                      <Typewriter
                      
                      options={{
-                         strings:['Full Stack Web Developer👩‍💻', 'Artist 🎨','Student🤓 ','Argentina ' ],
+                         strings:['Full Stack Web Developer👩‍💻', 'Artistic Painter  🎨','Student 👓 ' ],
                          autoStart: true,
                          loop:true,
                      }}
