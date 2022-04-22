@@ -3,6 +3,7 @@ import About from '../About/About';
 import Portfolio from '../PortfolioHome/PortfolioHome';
 import Contact from '../Contacto/Contacto';
 import Navbar from '../Navbar/Navbar';
+import Canvas from '../Canvas2/Canvas'
 import style from '../MouseTrail/MouseTrail.module.css';
 
 
@@ -21,7 +22,7 @@ function Dot({ top,left }){
 }
 
 
-const Home = () => {
+const Home = ({canvasRef,ref}) => {
   const [mouse, setMouse] = useState({x: 0, y:0})
   const timer = useRef(null)
   const [dotPosition,setDotPosition] = useState([
@@ -51,7 +52,7 @@ const Home = () => {
         y: (target.y + follower.y * factor) / (factor + 1),
       };
     };
-    const positions = [];
+    const positions = [];//[{x:0.1, y:0.22},{x:etc,y:etc},{x:etc,}]
 
     //first dot,follows the mouse
     let target = mouse;
@@ -81,15 +82,17 @@ const Home = () => {
     window.addEventListener('mousemove', trackMouse);
     return ()=> window.removeEventListener('mousemove',trackMouse)
   })
+  const width= `${100}%`
   return (
     <div>
+      
       <div>
       <Navbar/>
       <About/>
       <Portfolio/>
-      {dotPosition.map((pos,idx)=>(
+      {/* {dotPosition.map((pos,idx)=>(
         <Dot key={idx} top={pos.y} left={pos.x}/>
-      ))}
+      ))} */}
       <Contact/>
       </div>
     </div>
