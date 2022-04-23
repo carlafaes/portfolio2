@@ -14,10 +14,13 @@ function Dot({ top,left }){
     ref.current.style.left = `${left}px`;
   },[top,left]);
   return <div className={style.Dot} ref={ref}>
-    <div className={style.Dot2}></div>
-    <div className={style.Dot3}></div>
-    <div className={style.Dot4}></div>
-    <div className={style.Dot5}></div>
+    <span className={style.Dot2}></span>
+    <span className={style.Dot3}></span>
+    <span className={style.Dot4}></span>
+    <span className={style.Dot5}></span>
+    <span className={style.Dot6}></span>
+    <span className={style.Dot4}></span>
+    <span className={style.Dot7}></span>
   </div>
 }
 
@@ -44,7 +47,7 @@ const Home = ({canvasRef,ref}) => {
   ])
 
   function animate(){
-    const factor = 10;
+    const factor = 0.5;
     //returns a position a step closer to the target,everytime
     const chase = (target,follower) => {
       return{
@@ -90,9 +93,9 @@ const Home = ({canvasRef,ref}) => {
       <Navbar/>
       <About/>
       <Portfolio/>
-      {/* {dotPosition.map((pos,idx)=>(
+      {dotPosition.map((pos,idx)=>(
         <Dot key={idx} top={pos.y} left={pos.x}/>
-      ))} */}
+      ))}
       <Contact/>
       </div>
     </div>

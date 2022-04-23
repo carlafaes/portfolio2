@@ -1,52 +1,228 @@
 .Dot{
     position: absolute;
-    
-    width: 7px;
-    border-bottom:5px solid rgba(255, 192, 203, 0.723);
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    height: 7px;
-    transform: translateY(10px); 
+    border-radius: 50%;
+    width: 5px;
+    background-color: black;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px rgb(235, 231, 232);
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-name: dot3;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+
     z-index: 1;
     
 }
+
 .Dot2{
     position: absolute;
-    width: 5px;
-    height: 7px;
+    width: 6px;
+    height: 6px;
     z-index: -8;
-    border-bottom:7px solid rgba(162, 35, 79, 0.739);
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    transform: translateX(15px);
+    background-color: pink;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px rgba(250, 245, 246, 0.727),1px 1px 10px white,1px 1px 10px gray;
+    transform: translateY(38px);
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-name: dot;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+
 }
 .Dot3{
     position: absolute;
-    width: 5px;
-    height: 5px;
-    border-bottom:7px solid rgba(128, 63, 126, 0.794);
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
+    width: 7px;
+    height: 7px;
+    box-shadow: 1px 1px 15px rgba(250, 245, 246, 0.727),1px 1px 10px white,1px 1px 10px gray;
+    background-color: rgb(153, 35, 54);
+    border-radius:50% ;
     z-index: -8;
-    transform: translateX(-15px);
+    margin-bottom: -25px;
+    transform: translateY(-25px);
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-name: dot3;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    top: 25px;
 }
 .Dot4{
     position: absolute;
     width: 5px;
     height: 5px; 
     z-index: -8;
-    border-bottom:5px solid rgba(225, 97, 180, 0.789);
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    transform: translateY(15px);
+    background-color: rgb(245, 231, 233);
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px rgba(250, 245, 246, 0.727);
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-name: dot2;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    bottom: 10px;
+    left: -5px;
+    transform: translateY(-45px);
 }
 .Dot5{
     position: absolute;
     width: 5px;
-    height: 5px; 
+    height: 5px;
+    margin-left: -20px; 
     z-index: -8;
-    border-bottom:7px solid rgba(203, 157, 199, 0.841);
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    transform: translateY(-15px);
+    background-color: rgb(168, 17, 42);
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px rgba(250, 245, 246, 0.727);
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-name: dot3;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    transform: translateY(-25px);
+    top: 10px;
+}
+
+.Dot6{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    margin-left: -20px; 
+    z-index: -8;
+    background-color: rgb(168, 17, 42);
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px rgba(250, 245, 246, 0.727);
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-name: dot3;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    transform: translateY(-25px);
+    top: -30px;
+}
+@keyframes dot{
+    0%{
+        background-color: bisque;
+        transform: translateY(20%);
+    
+
+    }
+    25%{
+        background-color: rgb(89, 65, 95);
+        transform: translateX(20%);
+    }
+    50%{
+        background-color: rgb(38, 14, 79);
+        transform: translateY(-20%);   
+    }
+    
+    100%{
+        background-color: rgba(109, 90, 106, 0.626);
+        transform: translateX(-20%);
+    }
+}
+
+.Dot7{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+     
+    z-index: -8;
+    background-color: rgb(168, 17, 42);
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px rgba(250, 245, 246, 0.727),0px 1px 10px white,1px 1px 10px gray;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-name: dot3;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    transform: translateY(25px);
+    left: 20px;
+}
+@keyframes dot{
+    0%{
+        background-color: bisque;
+        transform: translateY(40%);
+    
+
+    }
+    25%{
+        background-color: rgb(95, 69, 179);
+        transform: translateX(40%);
+    }
+    50%{
+        background-color: rgb(38, 14, 79);
+        transform: translateY(-40%);   
+    }
+    
+    100%{
+        background-color: rgba(109, 90, 106, 0.626);
+        transform: translateX(-40%);
+    }
+}
+
+
+@keyframes dot{
+    0%{
+        background-color: bisque;
+        transform: translateY(20%);
+    
+
+    }
+    25%{
+        background-color: rgb(182, 127, 196);
+        transform: translateX(20%);
+    }
+    50%{
+        background-color: rgb(38, 14, 79);
+        transform: translateY(-20%);   
+    }
+    
+    100%{
+        background-color: rgba(109, 90, 106, 0.626);
+        transform: translateX(-20%);
+    }
+}
+@keyframes dot2{
+    0%{
+        background-color: bisque;
+        transform: translateY(-20%);
+    
+
+    }
+    25%{
+        background-color: rgb(121, 96, 128);
+        transform: translateX(-20%);
+    }
+    50%{
+        background-color: rgb(38, 14, 79);
+        transform: translateY(20%);   
+    }
+    
+    100%{
+        background-color: rgba(109, 90, 106, 0.626);
+        transform: translateX(20%);
+    }
+}
+@keyframes dot3{
+    0%{
+        background-color: bisque;
+        transform: translateY(20%);
+    
+
+    }
+    25%{
+        background-color: rgb(42, 10, 50);
+        transform: translateX(20%);
+    }
+    50%{
+        background-color: rgb(38, 14, 79);
+        transform: translateY(-20%);   
+    }
+    
+    100%{
+        background-color: rgba(109, 90, 106, 0.626);
+        transform: translateX(-20%);
+    }
 }
