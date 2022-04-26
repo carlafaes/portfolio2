@@ -3,9 +3,9 @@ import About from '../About/About';
 import Portfolio from '../PortfolioHome/PortfolioHome';
 import Contact from '../Contacto/Contacto';
 import Navbar from '../Navbar/Navbar';
-import Canvas from '../Canvas2/Canvas'
 import style from '../MouseTrail/MouseTrail.module.css';
-
+import LandingThree from '../LandingTree/LandingTree'
+import HomeDos from '../Home2/Home2'
 
 function Dot({ top,left }){
   const ref = useRef(null);
@@ -88,15 +88,13 @@ const Home = ({canvasRef,ref}) => {
   const width= `${100}%`
   return (
     <div>
-      
+      <LandingThree/>
       <div>
-      <Navbar/>
-      <About/>
-      <Portfolio/>
-      {dotPosition.map((pos,idx)=>(
+      <HomeDos/>
+     {dotPosition.map((pos,idx)=>(
         <Dot key={idx} top={pos.y} left={pos.x}/>
       ))}
-      <Contact/>
+      
       </div>
     </div>
   )
