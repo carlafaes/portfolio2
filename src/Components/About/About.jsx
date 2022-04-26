@@ -28,11 +28,11 @@ useEffect(()=>{
         <div className={style.container2}>
             <div className={style.componente2}>
                 <div className={style.titleTags}>
-                <p  className={style.tags}>{h1}</p>
-                <p className={style.primTitle}>Hi! my name is</p>
+               
                 
                 </div>
              <div className={style.letters}>
+                <p className={style.primTitle}>Hi! my name is</p>
                     <section className={style.name1}>
                         <motion.p
                          whileHover={{
@@ -99,10 +99,10 @@ useEffect(()=>{
                          whileTap={{ scale: 0.9 }}
                         className={style.name}>S</motion.p>
                     </section>
-                    <p className={style.tags}>{h1}</p>
+                 
                  </div>
                 <div className={style.container3}>
-                <p className={style.tags}>{p}</p>
+                
                     <div className={style.titleTags}>
                      <p className={style.primTitle}>And i'm  </p>
                     </div>
@@ -116,7 +116,6 @@ useEffect(()=>{
                      }}
                      />
                      </div>
-                 <p className={style.tags}>{p}</p>
                 </div>
             </div>
           
