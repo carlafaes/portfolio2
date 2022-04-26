@@ -22,91 +22,19 @@ useEffect(()=>{
     return(
         <div className={style.general} id='about'>
             
+        <div className={style.container2}>
             <div className={style.container1}>
             <img className={style.img1} src={perfil} alt='yo_foto' />
             </div>
-        <div className={style.container2}>
-            <div className={style.componente2}>
-                <div className={style.titleTags}>
-               
-                
-                </div>
+            
              <div className={style.letters}>
-                <p className={style.primTitle}>Hi! my name is</p>
-                    <section className={style.name1}>
-                        <motion.p
-                         whileHover={{
-                             y:-26,
-                            duration:1
-                          }}
-                          whileTap={{ scale: 0.9 }}
-                        className={style.name}>C</motion.p>
-                        <motion.p
-                          whileHover={{
-                            y:-26,
-                           duration:1
-                         }}
-                         whileTap={{ scale: 0.9 }}
-                        className={style.name}>A</motion.p>
-                        <motion.p
-                          whileHover={{
-                            y:-26,
-                           duration:1
-                         }}
-                         whileTap={{ scale: 0.9 }}
-                        className={style.name}>R</motion.p>
-                        <motion.p
-                          whileHover={{
-                            y:-26,
-                           duration:1
-                         }}
-                         whileTap={{ scale: 0.9 }}
-                        className={style.name}>L</motion.p>
-                        <motion.p
-                          whileHover={{
-                            y:-26,
-                           duration:1
-                         }}
-                         whileTap={{ scale: 0.9 }}
-                        className={style.name}>A {tab}</motion.p>
-                         
-                        <motion.p
-                          whileHover={{
-                            y:-26,
-                           duration:1
-                         }}
-                         whileTap={{ scale: 0.9 }}
-                        className={style.name}> F</motion.p>
-                        <motion.p 
-                          whileHover={{
-                            y:-26,
-                           duration:1
-                         }}
-                         whileTap={{ scale: 0.9 }}
-                        className={style.name}>A</motion.p>
-                        <motion.p
-                          whileHover={{
-                            y:-26,
-                           duration:1
-                         }}
-                         whileTap={{ scale: 0.9 }}
-                        className={style.name}>E</motion.p>
-                        <motion.p
-                          whileHover={{
-                            y:-26,
-                           duration:1
-                         }}
-                         whileTap={{ scale: 0.9 }}
-                        className={style.name}>S</motion.p>
-                    </section>
-                 
-                 </div>
-                <div className={style.container3}>
-                
-                    <div className={style.titleTags}>
-                     <p className={style.primTitle}>And i'm  </p>
-                    </div>
+                <p className={style.primTitle}>
+                  Hi, I'm Carla Faes,<br/> I'm passionate about art <br/>and I discovered a new passion in my life <br/>which is programming,<br/> especially in Front End and styles.
+
+                </p>
                      <div className={style.segTitle}>
+                     <p className={style.primTitle}>And i'm 
+                     {tab}
                      <Typewriter
                      
                      options={{
@@ -114,14 +42,81 @@ useEffect(()=>{
                          autoStart: true,
                          loop:true,
                      }}
-                     />
-                     </div>
-                </div>
+                     /> </p>
             </div>
-          
-            
-        </div>
+           
+            </div>
+          </div>
             {/* <p className={style.text}>{information.about_me}</p>  */}
         </div>
+    
     )
 }
+
+
+{/* <section className={style.name1}>
+<motion.p
+ whileHover={{
+     y:-26,
+    duration:1
+  }}
+  whileTap={{ scale: 0.9 }}
+className={style.name}>C</motion.p>
+<motion.p
+  whileHover={{
+    y:-26,
+   duration:1
+ }}
+ whileTap={{ scale: 0.9 }}
+className={style.name}>A</motion.p>
+<motion.p
+  whileHover={{
+    y:-26,
+   duration:1
+ }}
+ whileTap={{ scale: 0.9 }}
+className={style.name}>R</motion.p>
+<motion.p
+  whileHover={{
+    y:-26,
+   duration:1
+ }}
+ whileTap={{ scale: 0.9 }}
+className={style.name}>L</motion.p>
+<motion.p
+  whileHover={{
+    y:-26,
+   duration:1
+ }}
+ whileTap={{ scale: 0.9 }}
+className={style.name}>A {tab}</motion.p>
+ 
+<motion.p
+  whileHover={{
+    y:-26,
+   duration:1
+ }}
+ whileTap={{ scale: 0.9 }}
+className={style.name}> F</motion.p>
+<motion.p 
+  whileHover={{
+    y:-26,
+   duration:1
+ }}
+ whileTap={{ scale: 0.9 }}
+className={style.name}>A</motion.p>
+<motion.p
+  whileHover={{
+    y:-26,
+   duration:1
+ }}
+ whileTap={{ scale: 0.9 }}
+className={style.name}>E</motion.p>
+<motion.p
+  whileHover={{
+    y:-26,
+   duration:1
+ }}
+ whileTap={{ scale: 0.9 }}
+className={style.name}>S</motion.p>
+</section> */}
