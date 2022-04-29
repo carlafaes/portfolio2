@@ -9,11 +9,16 @@ import style from './Home2.module.css';
 export default function HomeDos(){
 
     return(
-        <div className={style.containerx}>
+        < >
+
             <Navbar/>
+        <div className={style.container}>
+            <div>
             <About/>
             <Portfolio/>
             <Contact/>
+            </div>
         </div>
+        </>
     )
 }
