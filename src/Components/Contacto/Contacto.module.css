@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poiret+One&family=Yellowtail&display=swap');
+
 .container_principal{
     background-color: transparent;
     height: 100vh;
@@ -90,4 +92,5 @@ width: 100%;
     width: 90%;
     height: 60%;
     padding: 20px;
+    font-family: 'Poiret One', cursive;
 }

@@ -16,7 +16,7 @@ export default function Contact(){
             </div>
             <Mailer/>
         </div>
-        <p>FOLLOW ME</p>
+        <p className={style.follow}>FOLLOW ME</p>
         </div>
 
     )
