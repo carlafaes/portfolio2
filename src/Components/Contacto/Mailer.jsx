@@ -57,7 +57,7 @@ const messageError= ()=>{
 
     return(
         <div id='contact' className={style.container}>
-            <h2>Contact me</h2>
+           
             <form className={style.form_mail} onSubmit={sendEmail} id='form_complete'>
             <label>Name</label>
             <input type='text'  name='user_name' required placeholder='Your name'/>
