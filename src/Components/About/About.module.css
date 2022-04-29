@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Architects+Daughter&family=Indie+Flower&family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Allerta+Stencil&family=Architects+Daughter&family=Indie+Flower&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 
 .general{
@@ -87,9 +88,10 @@
     width: 100%;
     padding-left: 0%;
     transition: all ease-in 0.5s;
-    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
     height: auto;
-    font-size: 25px;
+    font-size: 26px;
     position: relative;
     background-color: transparent;
     background-image: url(https://i0.wp.com/s-media-cache-ak0.pinimg.com/564x/6a/e5/59/6ae5595081a0e2785937dfa7d2a03e39.jpg?resize=650,400);
@@ -102,10 +104,11 @@
 }
 
 .writer{
-    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size: 25px !important;
     padding-top: 15px;
-    color: #ba4892;
+    
+    color: #3246b6;
 }
 /* .segTitle{
     width: 80%;

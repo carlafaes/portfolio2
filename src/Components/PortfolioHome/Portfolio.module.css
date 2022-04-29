@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Allerta+Stencil&family=Architects+Daughter&family=Indie+Flower&family=Monoton&family=Square+Peg&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Allerta+Stencil&family=Architects+Daughter&family=Indie+Flower&family=Monoton&family=Righteous&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 .container{
-    background-color: transparent;
+    background-color: pink;
     height: 100vw;
-    margin-top: 5%;
     
 }
 
 .image{
     width: 90%;
-    height: 80%;
+    height: 70%;
     border-radius: 5px;
 }
 .card{
@@ -43,7 +43,7 @@
     margin-top: 25%;
 }
 .title{
-    font-family: 'Righteous', cursive;
+    font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
     font-size: 23px;
     color: rgb(125, 107, 215);
@@ -52,7 +52,7 @@
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
-    padding: 10px;
+    padding: 0px;
     overflow: hidden;
     width: 100%;
     color: blanchedalmond;
@@ -93,11 +93,11 @@ a:link, a:visited {
     text-decoration:none;
 }
 .btn{
-    margin-top: -20px;
+    margin-top: 20px;
     color:white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     cursor:pointer;
-    font-weight:600;
+    font-weight:400;
     transition:all 0.5s ease;
     background-color: rgb(17, 9, 65);
     padding: 10px;

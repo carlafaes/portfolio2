@@ -1,4 +1,17 @@
+.container_principal{
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100%;
+}
 .container{
 background-color: aqua;
-height: 100vh;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+height: 70vh;
+width: 100%;
+}
+.container_text{
+    width: 40%;
 }

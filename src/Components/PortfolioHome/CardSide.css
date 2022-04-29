@@ -2,7 +2,7 @@
 .project{
     background-color: transparent;
     width: 350px;
-    height: 400px;
+    height: 340px;
     margin: 10px;
     position: relative;
 }
@@ -11,7 +11,7 @@
     transition: all 0.7s ease;
     backface-visibility: hidden;
     position:relative;
-    top:-15px;
+    top:-74px;
     left:0px;
     width: 100%;
 }
