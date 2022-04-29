@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Allerta+Stencil&family=Architects+Daughter&family=Indie+Flower&family=Monoton&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Allerta+Stencil&family=Architects+Daughter&family=Indie+Flower&family=Monoton&family=Righteous&family=Square+Peg&display=swap');
+
+.container{
+    background-color: transparent;
+    height: 100vw;
+    margin-top: 5%;
+    
+}
+
+.image{
+    width: 90%;
+    height: 80%;
+    border-radius: 5px;
+}
+.card{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+.card2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60%;
+}
+
+.container_gen{
+    padding-top: 100px;
+    flex-direction: row;
+    height: 170px;
+    background-color: transparent;
+}
+.cont_dos{
+    background-color: transparent;
+    margin-top: 25%;
+}
+.title{
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    font-size: 23px;
+    color: rgb(125, 107, 215);
+}
+.subtitle{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    width: 100%;
+    color: blanchedalmond;
+    background-color: transparent;
+}
+.subtitle2{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    
+    word-wrap: break-word;
+    height: 80%;
+    width: 100%;
+    
+}
+.text{
+    font-size: 20px;
+    color: rgb(125, 107, 215);
+    padding-top: 10px;
+    font-weight: 200;
+}
+.link_project{
+    margin-top: -20px;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor:pointer;
+    font-weight: bold;
+    transition:all 0.5s ease;
+    background-color: rgb(17, 9, 65);
+    padding: 10px;
+    border-radius: 7px;
+}
+.link_project:hover{
+    color:rgb(172, 172, 215);
+    box-shadow: 1px 1px 10px whitesmoke;
+}
+a:link, a:visited {
+    text-decoration:none;
+}
+.btn{
+    margin-top: -20px;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor:pointer;
+    font-weight:600;
+    transition:all 0.5s ease;
+    background-color: rgb(17, 9, 65);
+    padding: 10px;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.btn:hover{
+    color:rgb(172, 172, 215);
+    box-shadow: 1px 1px 10px whitesmoke;
+}
