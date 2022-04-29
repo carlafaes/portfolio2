@@ -6,6 +6,7 @@ import Loader from './Components/Loader/Loader'
 import Home from './Components/Home/Home'
 import Portfolio from './Components/Portfolio/Portfolio'
 import Three from './Components/LandingTree/LandingTree'
+import Home2 from './Components/Home2/Home2'
 import './App.css';
 
 
@@ -25,18 +26,21 @@ function App() {
 
   return (
     <>
+    
     {loading? (
       <Loader setLoading={setLoading} />
     ):(
     <div className="App">
       <Routes>
-        <Route  path='/' element={<Home/>}/>
+        <Route  path='/' element={<Home2/>}/>
         <Route path='/three' element={<Three/>}/>
         <Route  path='/port' element={<Portfolio/>}/>
+       
       </Routes>
     </div>
      )
     }
+   
   </>
   )
 }
