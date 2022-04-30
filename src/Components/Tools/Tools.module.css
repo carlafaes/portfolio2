@@ -11,9 +11,13 @@
     cursor: pointer;
     padding: 30px;
     width: 80px;
+    height: 70px;
     color: aqua;
+    background-color: antiquewhite;
     filter: drop-shadow(0 0 0.8em rgb(83, 25, 230));
 }
+
+
 
 .container_tools{
     position: relative;
@@ -50,4 +54,7 @@
     padding: 20px;
     font-family: 'Poiret One', cursive;
     font-size: 22px;
+}
+.p_{
+    color: rgb(150, 197, 238);
 }

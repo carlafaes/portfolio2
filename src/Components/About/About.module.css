@@ -18,9 +18,12 @@
 .img1{
     position:relative;
     width: 350px;
-    height:40%;   
+    height:45%;   
     filter: drop-shadow(0 0 0.9em rgb(67, 7, 219));
-    border-radius: 50%;
+    border-radius: 15%;
+padding: 6% 0% 3% 5%;
+box-sizing: border-box;
+
 }
 
 
