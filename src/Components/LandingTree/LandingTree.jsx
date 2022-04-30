@@ -5,7 +5,9 @@ import { Suspense, useMemo, useRef } from 'react';
 import style from './LandingThree.module.css';
 import Perfil from '../About/img/perfil.jpg'
 import Typewriter from 'typewriter-effect'
-import { Link } from 'react-scroll';
+import { Link as Scroll } from 'react-scroll';
+import {Link} from 'react-router-dom';
+
 
 
 const sizes={
@@ -60,7 +62,15 @@ export default function LandingTree(){
                 <p className={style.txt}>Hi! Welcome to <br/> my portfolio</p>
             <div>
 
-                <Link className={style.link} to='navbar'>Go there</Link>
+                <Link to='/home'>
+                <button>
+                    <span id='span1'></span>
+                    <span id='span2'></span>
+                    <span id='span3'></span>
+                    <span id='span4'></span>
+                    Go there
+                </button>
+                </Link>
             </div>
             </div>
                     
@@ -69,18 +79,18 @@ export default function LandingTree(){
             <OrbitControls/>
             <Suspense fallback={null}>
                 <perspectiveCamera
-                fov={75}
+                fov={95}
                 aspect={sizes.width / sizes.height}
-                position={[0,0,3]}
-                near={0.3}
+                position={[0,0,1]}
+                near={0.2}
                 far={100}
                 >
                     <Stars
                      radius={100}
-                     depth={50}
-                     count={5000}
-                     factor={5}
-                     saturation={2}
+                     depth={20}
+                     count={7000}
+                     factor={7}
+                     saturation={1}
                      fade
                     />
                 </perspectiveCamera>
