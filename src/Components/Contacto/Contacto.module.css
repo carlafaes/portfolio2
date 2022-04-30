@@ -6,12 +6,12 @@
     width: 100%;
 }
 .container{
-background-color: aqua;
+background-color: transparent;
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
-height: 60vh;
+height: 50vh;
 width: 100%;
 
 }
@@ -87,10 +87,11 @@ width: 100%;
 }
 
 .text_p{
-    background-color: #2f0d83;
+    background-color: transparent;
     color: darkgray;
     width: 90%;
     height: 60%;
     padding: 20px;
     font-family: 'Poiret One', cursive;
+    font-size: 22px;
 }

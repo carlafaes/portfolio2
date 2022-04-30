@@ -32,7 +32,7 @@ function App() {
     ):(
     <div className="App">
       <Routes>
-        <Route  path='/' element={<Home2/>}/>
+        <Route  path='/' element={<Home/>}/>
         <Route path='/three' element={<Three/>}/>
         <Route  path='/port' element={<Portfolio/>}/>
        

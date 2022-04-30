@@ -88,7 +88,6 @@ const Home = ({canvasRef,ref}) => {
   const width= `${100}%`
   return (
     <div>
-      <LandingThree/>
       <div>
       <HomeDos/>
      {dotPosition.map((pos,idx)=>(

@@ -59,17 +59,17 @@ const messageError= ()=>{
         <div id='contact' className={style.container}>
            
             <form className={style.form_mail} onSubmit={sendEmail} id='form_complete'>
-            <label>Name</label>
+            <label className={style.labels}>Name</label>
             <input type='text'  name='user_name' required placeholder='Your name'/>
             {errors.user_name && (<p>{errors.user_name}</p>)}
             <hr/>
 
-            <label>Email</label>
+            <label className={style.labels}>Email</label>
             <input type='email'  name='user_email'required placeholder='Your email'/>
             {errors.user_email && (<p>{errors.user_email}</p>)}
             <hr/>
 
-            <label>Message</label>
+            <label className={style.labels}> Message</label>
             <textarea  name='user_message' id='' cols='30' rows='10' required placeholder='Write your message here'></textarea>
             {errors.user_message && (<p>{errors.user_message}</p>)}
             <hr/>
