@@ -46,19 +46,14 @@ export default function Tool(){
 
             className={style.container_tools}>
                 {Tools ? Tools.map((tec,index)=>(
-                    <motion.div
-                    whileHover={{
-                        scale: [1, 2, 2, 1, 1],
-                        borderRadius: ["20%", "20%", "40%", "40%", "20%"],
-                      }}
-                      whileTap={{ scale: 0.9 }}
+                    <div
                     key={Math.random(index)}>
                     <a  href={tec.link}>
                         <img
                         className={style.img} src={tec.name} alt='tec'/>
                         <p className={style.p_}>{tec.description}</p>
                     </a>
-                    </motion.div>
+                    </div>
                 )):
                 <p>loading</p>}
             </div>

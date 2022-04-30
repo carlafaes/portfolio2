@@ -4,6 +4,7 @@ import Mailer from './Mailer'
 import msg from '../icons/message.png';
 import git from '../icons/github3.png';
 import linkedin from '../icons/linkedin.png'
+import {motion} from 'framer-motion';
 
 export default function Contact(){
 
@@ -15,7 +16,15 @@ export default function Contact(){
             </div>
             <div id='contact' className={style.container}>
             <div className={style.container_text}>
-                <img src={msg} className={style.msg} alt='msg_' />
+                <motion.img
+                    whileHover={{
+                        scale: [1, 2, 2, 1, 1],
+                        
+                      }}
+                      whileTap={{ scale: 0.9 }}
+                 src={msg} 
+                 className={style.msg} 
+                 alt='msg_' />
                 <p className={style.text_p}>I am interested in obtaining a job in which I can continue to professionalize and learn day by day, I enjoy working in a team. However, if you have any other request or question, please feel free to use the form below.</p>
             </div>
             <Mailer/>

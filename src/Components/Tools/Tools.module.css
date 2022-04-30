@@ -9,12 +9,17 @@
 }
 .img{
     cursor: pointer;
-    padding: 30px;
+    padding: 10px;
     width: 80px;
     height: 70px;
-    color: aqua;
+    transition: all 1s;
+    margin: 10px;
+    /* color: aqua;
     background-color: antiquewhite;
-    filter: drop-shadow(0 0 0.8em rgb(83, 25, 230));
+    filter: drop-shadow(0 0 0.8em rgb(83, 25, 230)); */
+}
+.img:hover{
+    transform: skew(30deg,30deg);
 }
 
 
@@ -26,8 +31,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     /* background-color: rgba(0, 0, 255, 0.144); */
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
     justify-content: space-evenly;
     padding: 0px;
     border-radius: 15px;
