@@ -14,13 +14,9 @@
     height: 70px;
     transition: all 1s;
     margin: 10px;
-    /* color: aqua;
-    background-color: antiquewhite;
-    filter: drop-shadow(0 0 0.8em rgb(83, 25, 230)); */
+    filter: drop-shadow(0 0 0.5em rgb(83, 25, 230)); 
 }
-.img:hover{
-    transform: skew(30deg,30deg);
-}
+
 
 
 
