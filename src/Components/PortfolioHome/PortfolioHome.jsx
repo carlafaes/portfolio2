@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import axios from 'axios';
 import style from './Portfolio.module.css'
 import './CardSide.css'
-
+import code from '../icons/code.png';
 
 export default function Portfolio(){
     const [projects,setProjects]=useState([]);
@@ -41,6 +41,8 @@ export default function Portfolio(){
                     </div>
                     </div>
                 </div>
+
+                <img src={code} className={style.code} alt='code_'></img>
 
             
                 <div  className='project'>

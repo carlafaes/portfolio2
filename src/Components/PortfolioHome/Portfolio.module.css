@@ -115,3 +115,8 @@ a:link, a:visited {
     color:rgb(172, 172, 215);
     box-shadow: 1px 1px 10px whitesmoke;
 }
+
+.code{
+    background-color: transparent;
+    width: 120px;
+}
