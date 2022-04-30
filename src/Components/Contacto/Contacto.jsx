@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Contacto.module.css'
 import Mailer from './Mailer'
+import msg from '../icons/message.png'
 
 export default function Contact(){
 
