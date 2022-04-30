@@ -71,7 +71,7 @@ export default function Portfolio(){
                 </div>
                 <div>
                     <p className={style.subtitle}>Would you like to see more?</p>
-                    <Link to='/portfolio'>
+                    <Link to='/port'>
                         <button className='btn_'>
                         <span id='span1'></span>
                         <span id='span2'></span>

@@ -7,6 +7,7 @@ import Perfil from '../About/img/perfil.jpg'
 import Typewriter from 'typewriter-effect'
 import { Link as Scroll } from 'react-scroll';
 import {Link} from 'react-router-dom';
+import '../buttons.css';
 
 
 
@@ -54,27 +55,37 @@ const Text = ({text, position, vAlign ='center', hAlign ='center'})=>{
 }
 export default function LandingTree(){
 
+    const tab = <>&nbsp;</>;
+
     return(
         <div>
+            <div className={style.container_general}>
+                <div className={style.titulos}>
 
-            <div className={style.container}>
-
-                <p className={style.txt}>Hi! Welcome to <br/> my portfolio</p>
-            <div>
-
-                <Link to='/home'>
-                <button>
-                    <span id='span1'></span>
-                    <span id='span2'></span>
-                    <span id='span3'></span>
-                    <span id='span4'></span>
-                    Go there
-                </button>
-                </Link>
-            </div>
-            </div>
+                <div className={style.title}>
+                <h2 className={style.title_}>Hi! Welcome</h2>
+                <h2 className={style.title_}>Hi! Welcome</h2>
+                </div>
+                {tab}
+                <div className={style.title2}>
+                <h2 className={style.title_}> to  my portfolio</h2>
+                <h2 className={style.title_}> to my portfolio</h2>
+                </div>
+                </div>
                     
-                     
+                <div className={style.container_btn}>
+
+                    <Link to='/home'>
+                    <button className='btn_'>
+                        <span id='span1'></span>
+                        <span id='span2'></span>
+                        <span id='span3'></span>
+                        <span id='span4'></span>
+                        Go there
+                    </button>
+                    </Link>
+                </div>
+            </div>                  
         <Canvas className={style.canvas}>
             <OrbitControls/>
             <Suspense fallback={null}>
@@ -96,7 +107,7 @@ export default function LandingTree(){
                 </perspectiveCamera>
             </Suspense>
             <ambientLight/>
-        </Canvas>
+        </Canvas> 
         </div>
     )
 }
