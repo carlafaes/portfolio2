@@ -13,6 +13,9 @@ export default function Navbar(){
             <Link className={style.link} to='portfolio' smooth>Portfolio</Link>
             </div>
             <div className={style.btn}>
+            <Link className={style.link} to='tools' smooth>Skills</Link>
+            </div>
+            <div className={style.btn}>
             <Link className={style.link} to='contact' smooth>Contact</Link>
             </div>
         </div>

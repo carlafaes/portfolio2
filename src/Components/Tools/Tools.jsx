@@ -36,9 +36,10 @@ const Tools=[
 export default function Tool(){
 
     return(
-        <div className={style.container}>
+        <div className={style.container} id='tools'>
             <div className={style.container_title}>
-                <h3 className={style.title}>Tools</h3>
+                <h3 className={style.title}>Skills</h3>
+                <p className={style.parr}>These are the technologies I have used in the projects I have done so far.</p>
             </div>
             <div className={style.container_tools}>
                 {Tools ? Tools.map((tec,index)=>(
