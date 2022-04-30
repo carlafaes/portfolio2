@@ -24,3 +24,10 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 17px;
 }
+
+.input{
+position: relative;
+border-radius: 5px;
+color: #efebf7;
+background-color: rgba(13, 2, 17, 0.452);
+}
