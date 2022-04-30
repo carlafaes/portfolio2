@@ -1,7 +1,9 @@
 import React from 'react';
 import style from './Contacto.module.css'
 import Mailer from './Mailer'
-import msg from '../icons/message.png'
+import msg from '../icons/message.png';
+import git from '../icons/github3.png';
+import linkedin from '../icons/linkedin.png'
 
 export default function Contact(){
 
@@ -13,11 +15,17 @@ export default function Contact(){
             </div>
             <div id='contact' className={style.container}>
             <div className={style.container_text}>
+                <img src={msg} className={style.msg} alt='msg_' />
                 <p className={style.text_p}>I am interested in obtaining a job in which I can continue to professionalize and learn day by day, I enjoy working in a team. However, if you have any other request or question, please feel free to use the form below.</p>
             </div>
             <Mailer/>
         </div>
         <p className={style.follow}>FOLLOW ME</p>
+        <div className={style.redes}>
+
+        <img src={linkedin} className={style.icon_contact} alt='linkedin_'/>
+        <img src={git} className={style.icon_contact} alt='git_' />
+        </div>
         </div>
 
     )

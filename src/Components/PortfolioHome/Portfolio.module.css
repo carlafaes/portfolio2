@@ -50,8 +50,10 @@
 .title{
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
-    font-size: 23px;
-    color: rgb(125, 107, 215);
+    font-size: 25px;
+    background: -webkit-linear-gradient(#7b25cc,#2f0d83);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .subtitle{
     font-size: 25px;

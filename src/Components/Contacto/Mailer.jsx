@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import style from './Mailer.module.css'
 import emailjs from '@emailjs/browser';
+import '../buttons.css';
 
 //probando terminal
 
@@ -73,7 +74,11 @@ const messageError= ()=>{
             <textarea  name='user_message' id='' cols='30' rows='10' required placeholder='Write your message here'></textarea>
             {errors.user_message && (<p>{errors.user_message}</p>)}
             <hr/>
-            <button>
+            <button className='btn_'>
+            <span id='span1'></span>
+                    <span id='span2'></span>
+                    <span id='span3'></span>
+                    <span id='span4'></span>
                 Send
             </button>
             </form>

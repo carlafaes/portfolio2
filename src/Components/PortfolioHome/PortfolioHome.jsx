@@ -4,6 +4,7 @@ import axios from 'axios';
 import style from './Portfolio.module.css'
 import './CardSide.css'
 import code from '../icons/code.png';
+import '../buttons.css';
 
 export default function Portfolio(){
     const [projects,setProjects]=useState([]);
@@ -71,7 +72,11 @@ export default function Portfolio(){
                 <div>
                     <p className={style.subtitle}>Would you like to see more?</p>
                     <Link to='/portfolio'>
-                        <button className={style.btn}>
+                        <button className='btn_'>
+                        <span id='span1'></span>
+                        <span id='span2'></span>
+                        <span id='span3'></span>
+                        <span id='span4'></span>
                             See more
                         </button>
                     </Link>

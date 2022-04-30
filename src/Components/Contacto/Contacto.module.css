@@ -19,6 +19,33 @@ width: 100%;
     width: 40%;
 }
 
+.msg{
+    width: 115px;
+}
+
+.follow{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+    background: -webkit-linear-gradient(#7b25cc,#2f0d83);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.redes{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icon_contact{
+    width: 90px;
+    padding: 10px;
+}
+
 .title{
     padding-top: 150px;
     background-color: transparent;
