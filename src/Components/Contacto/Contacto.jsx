@@ -22,9 +22,12 @@ export default function Contact(){
         </div>
         <p className={style.follow}>FOLLOW ME</p>
         <div className={style.redes}>
-
+        <a href='https://www.linkedin.com/in/carla-faes/' target='blank'>
         <img src={linkedin} className={style.icon_contact} alt='linkedin_'/>
+        </a>
+        <a href='https://github.com/carlafaes' target='_blank'>
         <img src={git} className={style.icon_contact} alt='git_' />
+        </a>
         </div>
         </div>
 

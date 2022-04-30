@@ -41,11 +41,15 @@ width: 100%;
 
 }
 
+
 .icon_contact{
     width: 90px;
     padding: 10px;
 }
 
+.icon_contact:hover{
+    filter: drop-shadow(0 0 0.8em rgb(67, 7, 219));
+}
 .title{
     padding-top: 150px;
     background-color: transparent;

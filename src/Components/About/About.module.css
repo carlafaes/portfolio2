@@ -18,7 +18,7 @@
 .img1{
     position:relative;
     width: 350px;
-    height:50%;   
+    height:40%;   
     filter: drop-shadow(0 0 0.9em rgb(67, 7, 219));
     border-radius: 50%;
 }
@@ -40,13 +40,13 @@
 }
 .container2{
     position: absolute;
-    height:90%;
+    height:100%;
     width: 50%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 0%;
 background-color: transparent;
 }
 .name1{
