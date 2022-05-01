@@ -1,11 +1,12 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import style from './Portfolio.module.css'
-import gal from './utils/gal1.gif';
+import { motion } from 'framer-motion';
 
 
 export default function Portfolio(){
-    const [projects,setProjects]=useState([]);
+    const [open,setOpen] = useState(false);
+    const [projects,setProjects]= useState([]);
     
 
     useEffect(()=>{
@@ -23,16 +24,27 @@ export default function Portfolio(){
             <h3>My Portfolio</h3>
             <p>Here are all the projects I have done so far, you can try them if you like</p>
             </div>
-            <div className={style.project}>
+            <div 
+            className={style.project}>
             {projects ? projects.map((el,index)=>(
-                <div className={style.card} key={index}> 
-                    <p className={style.text}>{el.name}</p>
+                <motion.div
+                 onMouseEnter={() => setOpen(!open)} 
+                transition={{layout:{duration:1, type:'spring'}}}
+                layout='position' 
+                onClick={()=> setOpen(!open)}
+                className={style.card} 
+                key={index}> 
+                    <p className={style.text_title}>{el.name}</p>
                     <img className={style.image} src={el.image} alt='imagen_project' />
-                    <p className={style.text}>{el.description}</p>
+                    {open && 
+                    (
+                    <motion.p className={style.text}>{el.description}</motion.p>
+                    )
+                    }
                     <div>
-                        <a href={el.link}>Ver Projecto</a>
+                        <a className={style.link} href={el.link}>Ver Projecto</a>
                     </div>
-                </div>
+                </motion.div>
             )):
             <div>Cargando</div>}
             </div>
