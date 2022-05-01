@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import style from './Portfolio.module.css'
 import { motion } from 'framer-motion';
+import { Grid } from "@mui/material"
 
 
 export default function Portfolio(){
@@ -17,12 +18,18 @@ export default function Portfolio(){
     },[setProjects])
 
     return(
+        <Grid 
+        
+        direction="row"
+        // justifyContent="center"
+        // alignItems="center" >
+        >
         <div className={style.container_pr}>
             
         <div className={style.container} id='portfolio'>
             <div className={style.container_title}>
-            <h3>My Portfolio</h3>
-            <p>Here are all the projects I have done so far, you can try them if you like</p>
+            <h3 className={style.title}>My Portfolio</h3>
+            <p className={style.sub}>Here are all the projects I have done so far, you can try them if you like</p>
             </div>
             <div 
             className={style.project}>
@@ -50,5 +57,6 @@ export default function Portfolio(){
             </div>
             </div>
         </div>
+        </Grid>
     )
 }
