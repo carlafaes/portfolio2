@@ -17,7 +17,7 @@ export default function Portfolio(){
     },[setProjects])
 
     return(
-        <div>
+        <div className={style.container_pr}>
             
         <div className={style.container} id='portfolio'>
             <div className={style.container_title}>
