@@ -6,6 +6,22 @@ import Carousel from 'react-elastic-carousel';
 import { Link } from "react-router-dom";
 import Loader from '../Loader/Loader'
 
+const cardVariants= {
+    offscreen: {
+      x: -400,
+    },
+    onscreen: {
+      x: 10,
+      translateX: -10,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        duration: 2,
+      },
+    },
+  };
+
+
 
 export default function Portfolio(){
     const [open,setOpen] = useState(false);
@@ -42,10 +58,15 @@ export default function Portfolio(){
                 </Link>
             </div>
         <div className={style.container} id='portfolio'>
-            <div className={style.container_title}>
+            <motion.div 
+               variants={cardVariants}
+               initial="offscreen"
+               whileInView="onscreen"
+               viewport={{ once: false, amount: 0 }}
+            className={style.container_title}>
             <h3 className={style.title}>My Portfolio</h3>
-            </div>
             <p className={style.sub}>Here are all the projects I have done so far, you can try them if you like</p>
+            </motion.div>
             
 
             

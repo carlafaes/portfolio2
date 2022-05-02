@@ -8,6 +8,24 @@ import { motion } from "framer-motion";
 import Loader from '../Loader/Loader'
 
 
+
+const cardVariants= {
+    offscreen: {
+      x: 400,
+    },
+    onscreen: {
+      x: 50,
+      translateX: -100,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        duration: 2,
+      },
+    },
+  };
+ 
+
+
 export default function About(){
 const [information, setInformation]=useState({});
 
@@ -27,7 +45,12 @@ useEffect(()=>{
           {information 
           ?
         
-        <div className={style.container2}>
+        <motion.div
+             variants={cardVariants}
+             initial="offscreen"
+             whileInView="onscreen"
+             viewport={{ once: false, amount: 0 }}
+              className={style.container2}>
             <div className={style.container1}>
             <img className={style.img1} src={perfil} alt='yo_foto' />
             </div>
@@ -56,7 +79,7 @@ useEffect(()=>{
       
            
             </div>
-          </div>
+          </motion.div>
         :
         <Loader/>
         }  

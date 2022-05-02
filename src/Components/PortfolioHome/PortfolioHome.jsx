@@ -5,7 +5,26 @@ import style from './Portfolio.module.css'
 import './CardSide.css'
 import code from '../icons/code.png';
 import '../buttons.css';
+import { motion } from "framer-motion";
+import Loader from '../Loader/Loader'
 
+
+
+const cardVariants= {
+    offscreen: {
+      x: -400,
+    },
+    onscreen: {
+      x: -50,
+      translateX: -40,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        duration: 2,
+      },
+    },
+  };
+ 
 export default function Portfolio(){
     const [projects,setProjects]=useState([]);
 
@@ -21,7 +40,12 @@ export default function Portfolio(){
     return(
         <div className={style.container} id='portfolio'>
          
-            <div className={style.cont_dos}>
+            <motion.div 
+            variants={cardVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: false, amount: 0 }}
+            className={style.cont_dos}>
                 <div className={style.container_gen}>
                     <h2 className={style.title}>My Portfolio</h2>
                     <p className={style.subtitle}>These are some of the projects I have done. Some of them I did together with great people and programmers.</p>
@@ -81,7 +105,7 @@ export default function Portfolio(){
                         </button>
                     </Link>
                 </div>
-                </div>
+                </motion.div>
         </div>
     )
 }

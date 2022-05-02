@@ -15,6 +15,39 @@ import node from './tools/nodejs.png';
 import style from './Tools.module.css'
 import { motion } from "framer-motion";
 
+
+
+
+const cardVariants= {
+    offscreen: {
+      x: -400,
+    },
+    onscreen: {
+      x: -50,
+      translateX: -40,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        duration: 2,
+      },
+    },
+  };
+
+const skillsVariants= {
+    offscreen: {
+      x: 400,
+    },
+    onscreen: {
+      x: 50,
+      translateX: -40,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        duration: 2,
+      },
+    },
+  };
+
 const Tools=[
     {name:sass, link:'https://sass-lang.com/',description:'SCSS'},
     {name:html, link:'https://es.wikipedia.org/wiki/HTML',description:'HTML5'},
@@ -37,25 +70,34 @@ export default function Tool(){
 
     return(
         <div className={style.container} id='tools'>
-            <div className={style.container_title}>
+            <motion.div 
+            variants={cardVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: false, amount: 0 }}
+            className={style.container_title}>
                 <h3 className={style.title}>Skills</h3>
                 <p className={style.parr}>These are the technologies I have used in the projects I have done so far.</p>
-            </div>
-            <div
-
+            </motion.div>
+            <motion.div
+            variants={skillsVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: false, amount: 0 }}
             className={style.container_tools}>
                 {Tools ? Tools.map((tec,index)=>(
-                    <div
+                    <motion.div
+                    
                     key={Math.random(index)}>
                     <a  href={tec.link}>
                         <img
                         className={style.img} src={tec.name} alt='tec'/>
                         <p className={style.p_}>{tec.description}</p>
                     </a>
-                    </div>
+                    </motion.div>
                 )):
                 <p>loading</p>}
-            </div>
+            </motion.div>
         </div>
     )
 }
