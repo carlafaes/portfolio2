@@ -19,9 +19,9 @@ export default function Navbar(){
             <div className={style.btn}>
             <Link className={style.link} to='contact' smooth>Contact</Link>
             </div>
-            <div className={style.btn}>
+            <div >
                 <Nav to='/pdf'>
-                    <button className={style.link}>
+                    <button className={style.btn_pdf}>
                         Download CV
                     </button>
                 </Nav>
