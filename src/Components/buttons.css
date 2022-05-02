@@ -89,3 +89,19 @@
        transform: translateY(0);
     }
  }
+
+ @media (max-width: 600px){
+   .btn_{
+      position: relative;
+      color:#3498DB;
+      font-size: 18px;
+      font-family: 'Orbitron', sans-serif;
+      padding: 10px 10px 15px 10px;
+      letter-spacing: 1px;
+      transition: 1s;
+      overflow: hidden;
+      background-color:transparent;
+      border-radius: 10px;
+      margin-top: 10px;
+   }  
+ }

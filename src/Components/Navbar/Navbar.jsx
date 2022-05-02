@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import {Link as Nav} from 'react-router-dom';
 import style from '../Navbar/Navbar.module.css';
 
 export default function Navbar(){
@@ -17,6 +18,13 @@ export default function Navbar(){
             </div>
             <div className={style.btn}>
             <Link className={style.link} to='contact' smooth>Contact</Link>
+            </div>
+            <div className={style.btn}>
+                <Nav to='/pdf'>
+                    <button className={style.link}>
+                        Download CV
+                    </button>
+                </Nav>
             </div>
         </div>
     )
