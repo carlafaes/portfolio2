@@ -7,6 +7,7 @@ import Home from './Components/Home/Home'
 import Portfolio from './Components/Portfolio/Portfolio'
 import Three from './Components/LandingTree/LandingTree'
 import Home2 from './Components/Home2/Home2'
+import Pdf from './Components/Download/Pdf'
 import './App.css';
 
 
@@ -35,7 +36,7 @@ function App() {
         <Route  path='/home' element={<Home/>}/>
         <Route path='/' element={<Three/>}/>
         <Route  path='/port' element={<Portfolio/>}/>
-       
+        <Route path='/pdf' element={<Pdf/>}/>
       </Routes>
     </div>
      )
