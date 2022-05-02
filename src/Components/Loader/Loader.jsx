@@ -42,7 +42,7 @@ const Loader = ({setLoading})=>{
         })
         return(
             <div className={style.loader}>
-           
+           loading
             </div>
         )
     }
