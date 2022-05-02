@@ -23,7 +23,7 @@ const cardVariants= {
       x: -400,
     },
     onscreen: {
-      x: -50,
+      x: -10,
       translateX: -40,
       transition: {
         type: "spring",

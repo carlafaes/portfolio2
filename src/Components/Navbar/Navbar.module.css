@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
     align-items:center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background:linear-gradient(to bottom, #2e0653,rgb(67, 7, 219));
     color: #b389a4;
     width: 100%;
@@ -44,7 +44,20 @@ cursor: pointer;
 @media (max-width: 600px){
     .container{
         display: flex;
-        flex-direction: row;      
+        flex-direction: row;
+        justify-content: flex-start;      
         width: 100%;
+    }
+    .btn{
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    .btn_pdf{
+        padding: 5px;
+        border-radius: 8px;
+        font-family: 'Allerta Stencil', sans-serif;
+        font-size: 15px;
+        margin-left: 10px;
+        transition: all 1s ease-out;
     }
 }
