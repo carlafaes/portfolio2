@@ -27,3 +27,11 @@
 .link{
 cursor: pointer;
 }
+
+@media (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: row;      
+        width: 100%;
+    }
+}

@@ -2,8 +2,8 @@ import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import style from './Portfolio.module.css'
 import { motion } from 'framer-motion';
-import { Grid } from "@mui/material"
 import Carousel from 'react-elastic-carousel';
+import { Link } from "react-router-dom";
 
 
 export default function Portfolio(){
@@ -33,7 +33,13 @@ export default function Portfolio(){
     return(
         
         <div className={style.container_pr}>
-            
+            <div className={style.nav_port}>
+                <Link to='/home'>
+                <button className={style.link}>
+                    Go Home
+                </button>
+                </Link>
+            </div>
         <div className={style.container} id='portfolio'>
             <div className={style.container_title}>
             <h3 className={style.title}>My Portfolio</h3>
