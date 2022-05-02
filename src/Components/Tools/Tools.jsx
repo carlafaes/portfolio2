@@ -4,7 +4,6 @@ import css from './tools/css3.png';
 import git from './tools/git.png';
 import html from './tools/html.png';
 import sass from './tools/sass.png';
-import express from './tools/express2.png';
 import Postgresql from './tools/postgresql.png';
 import react from './tools/react.png';
 import redux from './tools/redux.png';
