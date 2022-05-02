@@ -4,6 +4,7 @@ import style from './Portfolio.module.css'
 import { motion } from 'framer-motion';
 import Carousel from 'react-elastic-carousel';
 import { Link } from "react-router-dom";
+import Loader from '../Loader/Loader'
 
 
 export default function Portfolio(){
@@ -45,6 +46,8 @@ export default function Portfolio(){
             <h3 className={style.title}>My Portfolio</h3>
             </div>
             <p className={style.sub}>Here are all the projects I have done so far, you can try them if you like</p>
+            
+
             
             <div className={style.project}>
             <Carousel
@@ -88,7 +91,9 @@ export default function Portfolio(){
                     
                 </motion.div>
             )):
-            <div>Cargando</div>}
+            <div>
+            <Loader/>
+            </div>}
             </Carousel>
             </div>
             </div>

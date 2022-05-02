@@ -1,54 +1,21 @@
 import React,{useEffect} from 'react'
-import style from './Loader.css'
 import { motion } from 'framer-motion'
+import './Loader.css'
 
-const container={
-    show:{
-        transition:{
-            staggerChildren: 0.35,
-        }
-    }
-}
-
-const item={
-    hidden:{
-        opacity: 0, y: 200
-    },
-    show:{
-        opacity:1,
-        y:0,
-        transition:{
-            ease:[0.6,0.01, -0.05, 0.95],
-            duration:1.6,
-        }
-    },
-    exit:{
-        opacity:0,
-        y:0,
-        transition:{
-            ease:[0.6,0.01, -0.05,0.95],
-            duration:1.6
-        }
-    }
-}
-
-const Loader = ({setLoading})=>{
-        useEffect(()=>{
-            const timer=(()=>{
-                setLoading(false)
-            },4000);
+const Loader = ()=>{
         
-        return ()=> clearTimeout(timer)
-        })
         return(
-            <div className={style.loader}>
-           loading
+            <div className='cont'>
+            <div className='sppiner '>
+             <p className='l1 icon'
+             >L</p>
+             <p className='l2 icon'>O</p>
+             <p className='l3 icon'>A</p>
+             <p className='l4 icon'>D</p>
+             <p className='l5 icon'>I</p>
+             <p className='l6 icon'>N</p>
+             <p className='l7 icon'>G</p>
             </div>
-        )
-    }
-export function ImageBlock({id}){
-        return(
-            <div>
             </div>
         )
     }

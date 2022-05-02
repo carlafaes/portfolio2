@@ -1,0 +1,52 @@
+.cont{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.icon{
+    display: inline-block;
+    font-size: 44px;
+    animation: float 3s ease-out infinite;
+    font-family: 'Goldman', cursive;
+    background-color: transparent;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px rgba(0, 0, 255, 0.712);
+    background: -webkit-linear-gradient(#eee, rgb(51, 51, 51));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.l1{
+    animation-delay: 1s;
+}
+.l2{
+    animation-delay: 2s;
+}
+.l3{
+    animation-delay: 3s;
+}
+.l4{
+    animation-delay: 4s;
+}
+.l5{
+    animation-delay: 5s;
+}
+.l6{
+    animation-delay: 6s;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

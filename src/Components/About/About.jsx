@@ -5,6 +5,7 @@ import fondo from './img/fondo4.png'
 import style from './About.module.css'
 import Typewriter from 'typewriter-effect'
 import { motion } from "framer-motion";
+import Loader from '../Loader/Loader'
 
 
 export default function About(){
@@ -23,7 +24,9 @@ useEffect(()=>{
 
     return(
         <div className={style.general} id='about'>
-            
+          {information 
+          ?
+        
         <div className={style.container2}>
             <div className={style.container1}>
             <img className={style.img1} src={perfil} alt='yo_foto' />
@@ -54,6 +57,9 @@ useEffect(()=>{
            
             </div>
           </div>
+        :
+        <Loader/>
+        }  
             {/* <p className={style.text}>{information.about_me}</p>  */}
         </div>
     

@@ -7,6 +7,7 @@ import Tools from '../Tools/Tools';
 import style from './Home2.module.css';
 
 
+
 export default function HomeDos(){
 
     return(
