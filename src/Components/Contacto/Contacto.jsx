@@ -9,7 +9,7 @@ import {motion} from 'framer-motion';
 export default function Contact(){
 
     return(
-        <div className={style.container_principal}>
+        <div  id='contact' className={style.container_principal}>
             <div className={style.title}>
             <h2 className={style.title_}>Contact me</h2>
              <h2 className={style.title_}>Contact me</h2>

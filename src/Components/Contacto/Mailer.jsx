@@ -57,7 +57,7 @@ const messageError= ()=>{
 
 
     return(
-        <div id='contact' className={style.container}>
+        <div  className={style.container}>
            
             <form className={style.form_mail} onSubmit={sendEmail} id='form_complete'>
             <label className={style.labels}>Name</label>

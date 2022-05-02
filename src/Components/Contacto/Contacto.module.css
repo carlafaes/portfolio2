@@ -38,7 +38,6 @@ width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 
 
@@ -125,4 +124,52 @@ width: 100%;
     padding: 20px;
     font-family: 'Poiret One', cursive;
     font-size: 22px;
+}
+
+@media (max-width: 600px){
+    .container_principal{
+        background-color: transparent;
+        height: 150vh;
+        width: 100%;
+    }
+    .container{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        width: 100%;
+        
+        }
+        .container_text{
+            width: 90%;
+        }
+        
+        .msg{
+            width: 55px;
+        }
+        .icon_contact{
+            width: 50px;
+            padding: 10px;
+        }
+        .title{
+            padding-top: 120px;
+            background-color: transparent;
+            height: 90px;
+            width: 80%;
+            padding-left: 20%;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Orbitron', sans-serif;
+        }
+        .title_{
+            font-size: 35px !important;
+        }
+        .follow{
+            padding-top: 50px;
+        }
 }

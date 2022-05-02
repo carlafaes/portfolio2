@@ -21,6 +21,7 @@
     box-shadow: 1px 1px 10px rgb(67, 7, 219);
 }
 .labels{
+    position: relative;
     color: antiquewhite;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 17px;
@@ -31,4 +32,16 @@ position: relative;
 border-radius: 5px;
 color: #efebf7;
 background-color: rgba(13, 2, 17, 0.452);
+}
+
+@media (max-width: 600px){
+    .container{
+        height:100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background:transparent;
+    }
 }
