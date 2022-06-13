@@ -14,7 +14,7 @@ useEffect(()=>{
     return(
         <div>
             <object 
-            data={require('./CarlaCV.pdf')} 
+            data={require('./CARLA_NCV.pdf')} 
             type="application/pdf"
             width='100%'
             height='100%' >
