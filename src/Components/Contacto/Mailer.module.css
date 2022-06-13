@@ -11,7 +11,7 @@
 .form_mail{
     background-image: linear-gradient(43deg,#2e0653 50%,#4307db 100%);
     padding: 20px;
-    height: 60%;
+    height: 80%;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,9 @@ position: relative;
 border-radius: 5px;
 color: #efebf7;
 background-color: rgba(13, 2, 17, 0.452);
+height: 100px;
 }
+
 
 @media (max-width: 600px){
     .container{

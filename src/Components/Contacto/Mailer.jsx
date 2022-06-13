@@ -26,6 +26,11 @@ const sendEmail=(e)=>{
     emailjs.sendForm('service_stu3969','template_lejafpj',e.target,'H0NguBXqHykea033Q')
     .then(response =>{
         message();
+        setInputForm({
+            user_name:'',
+            user_email:'',
+            user_message:''
+        })
     })
     .catch(error => messageError())
 }
