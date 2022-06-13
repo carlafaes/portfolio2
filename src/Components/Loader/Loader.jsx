@@ -7,8 +7,7 @@ const Loader = ()=>{
         return(
             <div className='cont'>
             <div className='sppiner '>
-             <p className='l1 icon'
-             >L</p>
+             <p className='l1 icon'>L</p>
              <p className='l2 icon'>O</p>
              <p className='l3 icon'>A</p>
              <p className='l4 icon'>D</p>
