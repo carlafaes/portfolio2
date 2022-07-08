@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poiret+One&family=Yellowtail&display=swap');
 
-.container_principal{
+/* .container_principal{
     background-color: transparent;
     height: 100vh;
     width: 100%;
-}
+} */
 .container{
 background-color: transparent;
 display: flex;
@@ -12,7 +12,7 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 height: 50vh;
-width: 100%;
+width: auto;
 
 }
 .container_text{
@@ -42,7 +42,7 @@ width: 100%;
 
 
 .icon_contact{
-    width: 90px;
+    width: 60px;
     padding: 10px;
 }
 
@@ -62,7 +62,7 @@ width: 100%;
     font-family: 'Orbitron', sans-serif;
 }
 .title h2{
-    background: -webkit-linear-gradient(#7b25cc,#2f0d83);
+    background: -webkit-linear-gradient(#8c61b4,#2f0d83);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #FFF;

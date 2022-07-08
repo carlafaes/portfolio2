@@ -12,11 +12,11 @@ import Loader from '../Loader/Loader'
 
 const cardVariants= {
     offscreen: {
-      x: -400,
+      y: -400,
     },
     onscreen: {
-      x: 10,
-      translateX: -40,
+      y: 20,
+      translateY: -30,
       transition: {
         type: "spring",
         bounce: 0.2,
@@ -24,7 +24,21 @@ const cardVariants= {
       },
     },
   };
- 
+
+const skillsVariants= {
+    offscreen: {
+      y: 40,
+    },
+    onscreen: {
+      y: 10,
+      translateY: -50,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        duration: 2,
+      },
+    },
+  };
 export default function Portfolio(){
     const [projects,setProjects]=useState([]);
 

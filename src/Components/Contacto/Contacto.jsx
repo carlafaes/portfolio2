@@ -11,11 +11,11 @@ import { motion } from "framer-motion";
 
 const cardVariants= {
     offscreen: {
-      x: -400,
+      y: -400,
     },
     onscreen: {
-      x: 10,
-      translateX: -40,
+      y: 20,
+      translateY: -30,
       transition: {
         type: "spring",
         bounce: 0.2,
@@ -26,11 +26,11 @@ const cardVariants= {
 
 const skillsVariants= {
     offscreen: {
-      x: 400,
+      y: 40,
     },
     onscreen: {
-      x: 50,
-      translateX: -40,
+      y: 10,
+      translateY: -50,
       transition: {
         type: "spring",
         bounce: 0.2,
