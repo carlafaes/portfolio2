@@ -9,36 +9,6 @@ import { motion } from "framer-motion";
 import Loader from '../Loader/Loader'
 
 
-
-const cardVariants= {
-    offscreen: {
-      y: -400,
-    },
-    onscreen: {
-      y: 20,
-      translateY: -30,
-      transition: {
-        type: "spring",
-        bounce: 0.2,
-        duration: 2,
-      },
-    },
-  };
-
-const skillsVariants= {
-    offscreen: {
-      y: 40,
-    },
-    onscreen: {
-      y: 10,
-      translateY: -50,
-      transition: {
-        type: "spring",
-        bounce: 0.2,
-        duration: 2,
-      },
-    },
-  };
 export default function Portfolio(){
     const [projects,setProjects]=useState([]);
 
@@ -53,13 +23,6 @@ export default function Portfolio(){
 
     return(
         <div className={style.container} id='portfolio'>
-         
-            <motion.div 
-            variants={cardVariants}
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: false, amount: 0 }}
-            className={style.cont_dos}>
                 <div className={style.container_gen}>
                     <h2 className={style.title}>My Portfolio</h2>
                     <p className={style.subtitle}>These are some of the projects I have done. Some of them I did together with great people and programmers.</p>
@@ -119,7 +82,7 @@ export default function Portfolio(){
                         </button>
                     </Link>
                 </div>
-                </motion.div>
+
         </div>
     )
 }

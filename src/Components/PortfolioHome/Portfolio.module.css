@@ -25,14 +25,14 @@
     justify-content: space-evenly;
     background-color: transparent;
 }
-.card2{
+/* .card2{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
     height: 60%;
-}
+} */
 
 .container_gen{
     padding-top: 130px;

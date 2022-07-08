@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const cardVariants= {
     offscreen: {
-      y: -400,
+      y: -100,
     },
     onscreen: {
       y: 20,
@@ -44,15 +44,10 @@ export default function Contact(){
 
     return(
         <div  id='contact' className={style.container_principal}>
-            <motion.div
-             variants={cardVariants}
-             initial="offscreen"
-             whileInView="onscreen"
-             viewport={{ once: false, amount: 0 }}
-            className={style.title}>
+            <div className={style.title}>
             <h2 className={style.title_}>Contact me</h2>
              <h2 className={style.title_}>Contact me</h2>
-            </motion.div>
+            </div>
             <motion.div
               variants={skillsVariants}
               initial="offscreen"

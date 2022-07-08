@@ -9,20 +9,36 @@ import Loader from '../Loader/Loader'
 
 
 
+
 const cardVariants= {
-    offscreen: {
-      x: 400,
+  offscreen: {
+    y: -400,
+  },
+  onscreen: {
+    y: 20,
+    translateY: -30,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 2,
     },
-    onscreen: {
-      x: 50,
-      translateX: -100,
-      transition: {
-        type: "spring",
-        bounce: 0.2,
-        duration: 2,
-      },
+  },
+};
+
+const skillsVariants= {
+  offscreen: {
+    y: 40,
+  },
+  onscreen: {
+    y: 10,
+    translateY: -50,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 2,
     },
-  };
+  },
+};
  
 
 

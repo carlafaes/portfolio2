@@ -17,36 +17,35 @@ import { motion } from "framer-motion";
 
 
 
-
 const cardVariants= {
-    offscreen: {
-      x: -400,
+  offscreen: {
+    y: -400,
+  },
+  onscreen: {
+    y: 20,
+    translateY: -30,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 2,
     },
-    onscreen: {
-      x: -10,
-      translateX: -40,
-      transition: {
-        type: "spring",
-        bounce: 0.2,
-        duration: 2,
-      },
-    },
-  };
+  },
+};
 
 const skillsVariants= {
-    offscreen: {
-      x: 400,
+  offscreen: {
+    y: 40,
+  },
+  onscreen: {
+    y: 10,
+    translateY: -50,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 2,
     },
-    onscreen: {
-      x: 50,
-      translateX: -40,
-      transition: {
-        type: "spring",
-        bounce: 0.2,
-        duration: 2,
-      },
-    },
-  };
+  },
+};
 
 const Tools=[
     {name:sass, link:'https://sass-lang.com/',description:'SCSS'},
@@ -70,15 +69,8 @@ export default function Tool(){
 
     return(
         <div className={style.container} id='tools'>
-            <motion.div 
-            variants={cardVariants}
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: false, amount: 0 }}
-            className={style.container_title}>
                 <h3 className={style.title}>Skills</h3>
                 <p className={style.parr}>These are the technologies I have used in the projects I have done so far.</p>
-            </motion.div>
             <motion.div
             variants={skillsVariants}
             initial="offscreen"
