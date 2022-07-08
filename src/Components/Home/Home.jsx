@@ -90,9 +90,9 @@ const Home = ({canvasRef,ref}) => {
     <div>
       <div>
       <HomeDos/>
-     {dotPosition.map((pos,idx)=>(
+     {/* {dotPosition.map((pos,idx)=>(
         <Dot key={idx} top={pos.y} left={pos.x}/>
-      ))}
+      ))} */}
       
       </div>
     </div>

@@ -33,8 +33,8 @@ function App() {
     ):(
     <div className="App">
       <Routes>
-        <Route  path='/home' element={<Home/>}/>
-        <Route path='/' element={<Three/>}/>
+        <Route  path='/' element={<Home/>}/>
+        {/* <Route path='/' element={<Three/>}/> */}
         <Route  path='/port' element={<Portfolio/>}/>
         <Route path='/pdf' element={<Pdf/>}/>
       </Routes>

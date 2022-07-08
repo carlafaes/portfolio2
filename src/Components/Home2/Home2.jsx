@@ -27,15 +27,16 @@ export default function HomeDos(){
 
     return(
         < >
-
-            <Navbar/>
         <div className={style.container}>
+          <center>
+            <Navbar/>
             <div>
             <About/>
             <Portfolio/>
             <Tools/>
             <Contact/>
             </div>
+          </center>
         </div>
         </>
     )
