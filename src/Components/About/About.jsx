@@ -73,11 +73,11 @@ useEffect(()=>{
             
              <div className={style.letters}>
                 <p className={style.primTitle}>
-                  Hi, I'm Carla Faes,<br/> I'm passionate about art <br/>and I discovered a new passion in my life <br/>which is programming,<br/> especially in Front End and styles.
+                  Hola, Soy Carla Faes <br/> actualmente soy Desarrolladora Web Full Stack, tambien soy estudiante de Tecnicatura Universitaria en Programacion. <br/> Me gusta aprender nuevas tecnologias, y trabajar en equipo. 
 
                 </p>
                     
-                     <p className={style.primTitle}>...and i'm 
+                     <p className={style.primTitle}>...Otros cosas que me gusta hacer son: 
                      {tab}
                      </p>
                      <section  className={style.writer}>
@@ -86,7 +86,7 @@ useEffect(()=>{
                     
                      
                      options={{
-                         strings:['Full Stack Web Developer👩‍💻', 'Artistic Painter  🎨','Student 👓 ' ],
+                         strings:['Desarrollo FrontEnd👩‍💻', 'Pintura artistica 🎨','Estudiar autodidacta👓 ' ],
                          autoStart: true,
                          loop:true,
                      }}
