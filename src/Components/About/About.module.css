@@ -7,7 +7,7 @@
 
 
 .general{
-    height: 100vh;
+    height: auto;
     position: relative;
     color: #ecbbc1;
     display: flex;
@@ -15,6 +15,7 @@
     align-items: center;
     width: 100%;
     background-color: transparent;
+    padding-top: 10%;
 }
 .img1{
     position:relative;
@@ -27,32 +28,6 @@ box-sizing: border-box;
 
 }
 
-
-
-
-.container1{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-    margin-top: 0px;
-    position: relative;
-    background-color: transparent;
-
-}
-.container2{
-    position: absolute;
-    height:100%;
-    width: 50%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0%;
-background-color: transparent;
-}
 .name1{
     display: flex;
     flex-direction: row;
@@ -65,29 +40,17 @@ background-color: transparent;
     position: relative;
     background-color: transparent;
 }
-/* .name2{
-    display: flex;
-    flex-direction: row;
-    padding-left: 0%;
-    width: 50%;
-    letter-spacing: 10px;
-    color: #1ae027;
-    
-    font-size: 36px;
-    position: relative;
-    margin-top: 0;
-    background-color: rgb(0, 4, 255);
-} */
 
 .letters{
     position: relative;
 
-    width: 50%;
-    height: 100%;
+    width: auto;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
 }
 .primTitle{
     width: 100%;
@@ -113,22 +76,7 @@ background-color: transparent;
     
     color: #3246b6;
 }
-/* .segTitle{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 20%;
-    color:  #b389a4;
-    height: auto;
-    font-family: 'Architects Daughter', cursive;
-
-    font-size: 22px;
-    position: relative;
-    background-color: transparent;
-} */
-
-.componente2{
+/* .componente2{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,7 +84,7 @@ background-color: transparent;
     height: 100%;
     padding-top: 20px;
 background-color:blue;
-}
+} */
 .container3{
     background-color: transparent;
     width: 100%;
@@ -162,29 +110,15 @@ background-color:blue;
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
+        height: auto;
         width: 100%;
-    }
-
-    .container1{
-        background-color: transparent;
-        height: 50%;
-        width: 100%;
-        position: relative;
-    }
-    .container2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
     }
 
     .letters{
         position: relative;
-    
-        width: 90%;
-        height: 40%;
+        height: auto;
+        width: auto;
+        min-height: 40%;
         display: flex;
         flex-direction: column;
         /* align-items: center; */
@@ -194,7 +128,7 @@ background-color:blue;
     .img1{
         position:relative;
         width: 350px;
-        height:70%;   
+        height:auto;   
     
     }
 

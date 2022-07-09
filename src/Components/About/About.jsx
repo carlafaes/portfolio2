@@ -1,4 +1,7 @@
-import React,{useState,useEffect,useRef} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
 import axios from 'axios';
 import perfil from './img/perfil.gif'
 import fondo from './img/fondo4.png'
@@ -10,7 +13,7 @@ import Loader from '../Loader/Loader'
 
 
 
-const cardVariants= {
+const cardVariants = {
   offscreen: {
     y: -400,
   },
@@ -25,7 +28,7 @@ const cardVariants= {
   },
 };
 
-const skillsVariants= {
+const skillsVariants = {
   offscreen: {
     y: 40,
   },
@@ -39,70 +42,68 @@ const skillsVariants= {
     },
   },
 };
- 
 
 
-export default function About(){
-const [information, setInformation]=useState({});
 
-const tab = <>&nbsp;</>;
+export default function About() {
+  const [information, setInformation] = useState({});
 
-useEffect(()=>{
+  const tab = <>&nbsp;</>;
+
+  useEffect(() => {
     axios.get('https://portfolio-carlafaes.herokuapp.com/about')
-    .then(
+      .then(
         res => setInformation(res.data[0])
-    )
-},[])
+      )
+  }, [])
 
-  
 
-    return(
-        <div className={style.general} id='about'>
-          {information 
-          ?
-        
-        <motion.div
-             variants={cardVariants}
-             initial="offscreen"
-             whileInView="onscreen"
-             viewport={{ once: false, amount: 0 }}
-              className={style.container2}>
-            <div className={style.container1}>
-            <img className={style.img1} src={perfil} alt='yo_foto' />
+
+  return (
+    <div className={style.general} id='about'>
+      {information
+        ?
+
+          <Container>
+            <Row>
+              <Col>
+              <img className={style.img1} src={perfil} alt='yo_foto' />
+            </Col>
+            <Col>
+            <div className={style.letters}>
+              <p className={style.primTitle}>
+                Hola, Soy Carla Faes <br /> actualmente soy Desarrolladora Web Full Stack, tambien soy estudiante de Tecnicatura Universitaria en Programacion. <br /> Me gusta aprender nuevas tecnologias, y trabajar en equipo.
+
+              </p>
+
+              <p className={style.primTitle}>...Otros cosas que me gusta hacer son:
+                {tab}
+              </p>
+              <section className={style.writer}>
+
+                <Typewriter
+
+
+                  options={{
+                    strings: ['Desarrollo FrontEnd👩‍💻', 'Pintura artistica 🎨', 'Estudiar autodidacta👓 '],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </section>
+
+
             </div>
-            
-             <div className={style.letters}>
-                <p className={style.primTitle}>
-                  Hola, Soy Carla Faes <br/> actualmente soy Desarrolladora Web Full Stack, tambien soy estudiante de Tecnicatura Universitaria en Programacion. <br/> Me gusta aprender nuevas tecnologias, y trabajar en equipo. 
-
-                </p>
-                    
-                     <p className={style.primTitle}>...Otros cosas que me gusta hacer son: 
-                     {tab}
-                     </p>
-                     <section  className={style.writer}>
-
-                     <Typewriter
-                    
-                     
-                     options={{
-                         strings:['Desarrollo FrontEnd👩‍💻', 'Pintura artistica 🎨','Estudiar autodidacta👓 ' ],
-                         autoStart: true,
-                         loop:true,
-                     }}
-                     /> 
-                     </section>
-      
-           
-            </div>
-          </motion.div>
+            </Col>
+            </Row>
+          </Container>
         :
-        <Loader/>
-        }  
-            {/* <p className={style.text}>{information.about_me}</p>  */}
-        </div>
-    
-    )
+        <Loader />
+      }
+      {/* <p className={style.text}>{information.about_me}</p>  */}
+    </div>
+
+  )
 }
 
 
